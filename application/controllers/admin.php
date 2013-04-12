@@ -29,7 +29,7 @@ class Admin extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('template/adminheader');
+        $this->load->view('template/header');
         $this->load->view('admin/admin');
         $this->load->view('template/footer');
     }
@@ -72,7 +72,10 @@ class Admin extends CI_Controller {
      */
     public function contactus()
     {
-        $this->load->view('template/adminheader');
+        $header['headscript'] = "<script type='text/javascript' src='/public/js/admin.js'></script>";
+        $header['onload'] = "contactInit();";
+
+        $this->load->view('template/adminheader', $header);
         $this->load->view('welcome/contactus');
         $this->load->view('template/footer');
     }
@@ -84,7 +87,6 @@ class Admin extends CI_Controller {
      */
     public function addmember()
     {
-
         $header['headscript'] = "<script type='text/javascript' src='/min/?f=/public/js/admin.js{$this->config->item('min_debug')}&amp;{$this->config->item('min_version')}'></script>\n";
 
         $header['onload'] = "admin.addmemberIndex();";
@@ -103,7 +105,7 @@ class Admin extends CI_Controller {
         $this->load->view('template/footer');
     }
 
-    public function saveNewUser  ()
+    public function saveNewUser()
     {
         if ($_POST)
         {

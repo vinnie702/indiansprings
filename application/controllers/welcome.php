@@ -16,9 +16,23 @@ class Welcome extends CI_Controller {
 	 * So any other public methods not prefixed with an underscore will
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
+     */
+
+
+    function admin()
+    {
+        parent::__construct();
+
+        $this->load->library('functions');
+        $this->load->model('admin_model', 'admin', true);
+
+    }
+
 	public function index()
     {
+        $header['headscript'] = "<script type='text/javascript' src='/public/js/admin.js'></script>";	
+        $header['onload'] = "contactInit();";
+
         $this->load->view('template/homeheader');
         $this->load->view('welcome/homepage');
         $this->load->view('template/footer');
@@ -54,10 +68,20 @@ class Welcome extends CI_Controller {
      */
     public function contactus()
     {
-        $this->load->view('template/header');
+        $header['headscript'] = "<script type='text/javascript' src='/public/js/admin.js'></script>";	
+		$header['onload'] = "contactInit();";
+
+        $this->load->view('template/header', $header);
         $this->load->view('welcome/contactus');
         $this->load->view('template/footer');
     }
+
+	public function contact($type)
+	{
+		$body['type'] = $type;
+		$this->load->view('admin/contact', $body);
+	}
+
 }
 
 /* End of file welcome.php */

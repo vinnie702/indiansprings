@@ -63,6 +63,9 @@ class members_model extends CI_Model
             state = '{$p['state']}',
             zipCode = '{$p['zipCode']}',
             phone = '{$p['phone']}',
+            country = '{$p['country']}',
+
+
             `status` = 1";
 
         $this->db->query($sql);

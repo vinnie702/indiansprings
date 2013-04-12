@@ -1,42 +1,72 @@
 <div class"content">
     <div class="newmemberform">
-        <form name='addMemberForm' id='addMemberForm' method='post' action='/admin/saveNewUser'>
+        <form class="form-horizontal" name='addMemberForm' id='addMemberForm' method='post' action='/admin/saveNewUser'>
             <fieldset>
-                <legend>New Members</legend>
-                    <div class="row">
-                        <div class="span3">
-                            <label>First Name</label>
-                            <input type="text" name='firstName' id='firstName' placeholder="First Name">
-                        </div> <!-- /.span3 -->
-                        <div class="span3">
-                            <label>Last Name</label>
-                            <input type="text" name='lastName' id='lastName' placeholder="Last Name">
-                        </div> <!-- /.span3 -->
-                        <div class="span3">
-                            <label>E-Mail</label>
-                            <input type="text" placeholder="something@something.com">
-                        </div> <!-- /.span3 -->
-                            <label>Phone Number</label>
-                            <input type="text" placeholder="(702) 555-0000">
-                        <div class="span3">
-                        </div> <!-- /.span3 -->
-                    </div> <!-- /.row -->
-                    <div class="row">
-                        <div class="span3">
-                            <label>Address 1</label>
-                            <input type="text" placeholder="123 Spooner St.">
-                        </div> <!-- /.span3 -->
-                        <div class="span3">
-                            <label>Address 2</label>
-                            <input type="text" placeholder="#1234">
-                        </div> <!-- /.span3 -->
-                        <div class="span3">
-                            <label>City</label>
-                            <input type="text" placeholder="Las Vegas">
-                        </div> <!-- /.span3 -->
-                        <div class="span3">
-                            <label>State</label>
-                            <select>
+
+<legend>New Members</legend>
+    <div class="row">
+        <div class="span12">
+
+<div class="control-group">
+    <label class="control-label" for="inputfirstName">First Name</label>
+    <div class="controls">
+        <input type="text" id="inputfirstName" placeholder="John">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputlastName">Last Name</label>
+    <div class="controls">
+        <input type="text" id="inputlastName" placeholder="Doe">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputEmail">Email</label>
+    <div class="controls">
+        <input type="text" id="inputEmail" placeholder="someone@something.com">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputPassword">Create Password</label>
+    <div class="controls">
+        <input type="text" id="inputPassword" placeholder="Password">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputPhone">Phone Number</label>
+    <div class="controls">
+        <input type="text" id="inputPhone" placeholder="(702) 555-0000">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputaddress1">Address 1</label>
+    <div class="controls">
+        <input type="text" id="inputaddress1" placeholder="1234 Some St.">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputaddress2">Address 2</label>
+    <div class="controls">
+        <input type="text" id="inputaddress2" placeholder="#5678">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputCity">City</label>
+    <div class="controls">
+        <input type="text" id="inputCity" placeholder="Las Vegas">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputState">State</label>
+    <div class="controls">
+        <select id="inputState">
 <?php
 if (!empty($states))
 {
@@ -46,48 +76,86 @@ if (!empty($states))
     }
 }
 ?>
-                            </select>
-                        </div> <!-- /.span3 -->
-                    </div> <!-- /.row -->
-                    <div class="row">
-                        <div class="span3">
-                            <label>Zip Code</label>
-                            <input type="text" placeholder="89001">
-                        </div> <!-- /.span3 -->
-                        <div class="span3">
-                            <label>Country</label>
-                            <input type="text" placeholder="USA">
-                        </div> <!-- /.span3 -->
-                        <div class="span3">
-                            <label>Upload Photo</label>
-                            <input type="file">
-                        </div> <!-- /.span3 -->
-                    </div> <!-- /.row -->
-                    <div class="row">
-                        <div class="span6">
-                            <textarea rows="3">Bio Goes Here</textarea>
-                        </div> <!-- /.span6 -->
-                    </div> <!-- /.row -->
-                    <div class="row">
-                        <div class="span3">
-                            <label>Year Joined Lodge</label>
-                            <select>
-                                <option value="2013">2013</option>
-                                <option value="2012">2012</option>
-                            </select>
-                        </div> <!-- /.span3 -->
-                    </div> <!-- /.row -->
-                <!-- <span class="help-block">Example block-level help text here.</span> -->
-                <!-- <label class="checkbox"> -->
-                    <!-- <input type="checkbox"> Check me out -->
-                <!-- </label> -->
+        </select>
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputZip">Zip Code</label>
+    <div class="controls">
+        <input type="text" id="inputZip" placeholder="89001">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputCounty">Country</label>
+    <div class="controls">
+        <input type="text" id="inputCounty" placeholder="USA">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputPassword">Upload Photo</label>
+    <div class="controls">
+        <input type="file" id="inputPassword">
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputBio">Brother's Bio</label>
+    <div class="controls">
+        <textarea row="3" type="text" id="inputBio" placeholder="Type Bio Here..."></textarea>
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label" for="inputPhone">Year They Joined Lodge</label>
+    <div class="controls">
+        <select>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+            <option value="1989">1989</option>
+            <option value="1988">1988</option>
+            <option value="1987">1987</option>
+            <option value="1986">1986</option>
+            <option value="1985">1985</option>
+            <option value="1984">1984</option>
+        </select>
+    </div>
+</div>
+
+<div class='form-actions'>
+        <button type="button" class="btn btn-primary" id='submitBtn'>Submit</button>
+</div>
+
+
+    </div> <!-- /.span12 -->
+</div> <!-- /.row -->
+
+
             </fieldset>
-    
-        <div class='form-actions'>
-                <button type="button" class="btn btn-primary" id='submitBtn'>Submit</button>
-        </div>
-
-
         </form>
     </div> <!-- /.newmemberform -->
 </div> <!-- /.content -->

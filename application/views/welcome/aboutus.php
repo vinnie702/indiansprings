@@ -1,27 +1,27 @@
 <div class='row'>
     <div class='span4'>
-        <div class='sidebar'>
+        <div class='sidebar well'>
             <ul class="unstyled padded">
-                <li><a href='#'><button type="button" class="btn btn-info">Test Link 1</button></a></li>
+                <li><a href='#'><button type="button" class="btn btn-info btn-officer">Test Link 1</button></a></li>
                 <li></li>
-                <li><a href='#'><button type="button" class="btn btn-info">Test Link 2</button></a></li>
+                <li><a href='#'><button type="button" class="btn btn-info btn-officer">Test Link 2</button></a></li>
                 <li></li>
-                <li><a href='#'><button type="button" class="btn btn-info">Test Link 4</button></a></li>
+                <li><a href='#'><button type="button" class="btn btn-info btn-officer">Test Link 4</button></a></li>
                 <li></li>
-                <li><a href='#'><button type="button" class="btn btn-info">Test Link 5</button></a></li>
+                <li><a href='#'><button type="button" class="btn btn-info btn-officer">Test Link 5</button></a></li>
                 <li></li>
-                <li><a href='#'><button type="button" class="btn btn-info">Test Link 6</button></a></li>
+                <li><a href='#'><button type="button" class="btn btn-info btn-officer">Test Link 6</button></a></li>
                 <li></li>
-                <li><a href='#'><button type="button" class="btn btn-info">Test Link 7</button></a></li>
+                <li><a href='#'><button type="button" class="btn btn-info btn-officer">Test Link 7</button></a></li>
                 <li></li>
-                <li><a href='#'><button type="button" class="btn btn-info">Test Link 8</button></a></li>
+                <li><a href='#'><button type="button" class="btn btn-info btn-officer">Test Link 8</button></a></li>
                 <li></li>
-                <li><a href='#'><button type="button" class="btn btn-info">Test Link 9</button></a></li>
+                <li><a href='#'><button type="button" class="btn btn-info btn-officer">Test Link 9</button></a></li>
             </ul>
         </div> <!-- /.sidebar -->
     </div> <!-- /.span4 -->
     <div class='span8'>
-        <div class='content'>
+        <div class='content well'>
             <center><h2>Indian Springs Lodge #48</h2></center>
             <p>In the small Southern Nevada town of Indian Springs, 45 minutes northwest of Las Vegas, we find Nevada's Lodge Number 48.</p>
 

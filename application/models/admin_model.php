@@ -32,8 +32,15 @@ class admin_model extends CI_Model
         $sql = "INSERT INTO members SET
             firstName = '{$p['firstName']}',
             lastName = '{$p['lastName']}',
-            passwd = SHA1('{$p['passwd']}')";
-
+            email = '{$p['email']}',
+            passwd = SHA1('{$p['passwd']}')
+            address1 = '{$p['address1']}',
+            address2 = '{$p['address2']}',
+            city = '{$p['city']}',
+            state = '{$p['state']}',
+            zipCode = '{$p['zipCode']}',
+            phone = '{$p['phone']}',;
+ 
         $this->db->query($sql);
 
         return $this->db->insert_id();
