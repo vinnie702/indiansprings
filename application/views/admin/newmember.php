@@ -95,9 +95,9 @@ if (!empty($states))
 </div>
 
 <div class="control-group">
-    <label class="control-label" for="inputPassword">Upload Photo</label>
+    <label class="control-label" for="inputPhoto">Upload Photo</label>
     <div class="controls">
-        <input type="file" id="inputPassword">
+        <input type="file" id="inputPhoto">
     </div>
 </div>
 
@@ -109,9 +109,9 @@ if (!empty($states))
 </div>
 
 <div class="control-group">
-    <label class="control-label" for="inputPhone">Year They Joined Lodge</label>
+    <label class="control-label" for="inputjoinedLodge">Year They Joined Lodge</label>
     <div class="controls">
-        <select>
+        <select id="inputjoinedLodge">
             <option value="2013">2013</option>
             <option value="2012">2012</option>
             <option value="2011">2011</option>

@@ -38,11 +38,13 @@ include_once 'headerinclude.php';
                   <!-- </ul> -->
                 <!-- </li> -->
               </ul>
-                <form method="GET" class="navbar-search pull-right navsearch" action="http://www.google.com/search">
-                    <input type="text" class="search-query" placeholder="Search Disabled">
-                    <input type="submit" name="btnG" class="btn btn-small btn-primary" value="search">
-                    <input type="hidden" name="domains" value="http://www.indiansprings48.com">
-                    <input type="hidden" name="sitesearch" value="http://www.indiansprings48.com">
+                <form method="GET" class="form-search pull-right navsearch" action="http://www.google.com/search">
+                    <div class="input-append">
+                        <input type="text" class="search-query" placeholder="Search Disabled">
+                        <button type="text" name="btnG" class="btn btn-primary">Search</button>
+                    </div> <!-- /.input-append -->
+                        <input type="hidden" name="domains" value="http://www.indiansprings48.com">
+                        <input type="hidden" name="sitesearch" value="http://www.indiansprings48.com">
                 </form>
                 <ul class="nav pull-right">
                     <li><a href="/admin">Admin Area</a></li>

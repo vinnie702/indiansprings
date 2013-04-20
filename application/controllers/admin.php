@@ -29,7 +29,7 @@ class Admin extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('template/header');
+        $this->load->view('template/adminheader');
         $this->load->view('admin/admin');
         $this->load->view('template/footer');
     }
@@ -40,7 +40,6 @@ class Admin extends CI_Controller {
         $this->load->view('welcome/homepage');
         $this->load->view('template/footer');
     }
-
 
     /**
      * This is a page to display all current officers of the lodge.

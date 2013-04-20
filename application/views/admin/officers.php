@@ -58,7 +58,14 @@
                 <img src='/public/img/P1162042.JPG'>
             </div> <!-- /.officerimg -->
             <h3>Junior Warden</h3>
-            <p><strong>LastName, FirstName</strong></p>
+                <select>
+                <option name='' value=''></option>
+                <option name='adavis' value='adavis'>Alan Davis</option>
+                <option name='gburroughs' value='gburroughs'>George Burroughs</option>
+                <option name='bvinall' value='bvinall'>Brandon Vinall</option>
+                </select>
+
+            <!-- <p><strong>LastName, FirstName</strong></p> -->
             <p> Pellentesque non posuere velit. Vivamus eget lorem arcu, vitae faucibus lectus. Maecenas feugiat consectetur nibh at posuere. Quisque tristique sodales tellus convallis sagittis. Nunc egestas, ante in aliquet lobortis, ante neque rhoncus arcu, vitae semper mauris purus quis odio. Nam non sapien id libero pretium porta quis at turpis. Maecenas eu leo erat. In et tellus a mauris dapibus venenatis. Nam consequat consequat lectus. Nam adipiscing congue bibendum. Ut id viverra sapien. Vivamus vel dui mi, sit amet aliquam ligula. Ut at justo eget nisl dignissim congue. Quisque porttitor eleifend cursus. Sed mattis sodales tempor.</p>
 
 <p>Donec neque enim, adipiscing fermentum elementum porttitor, malesuada ut ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vitae pretium justo. Duis ornare pellentesque laoreet. Quisque fringilla, risus a porttitor laoreet, tellus nibh euismod purus, sit amet viverra neque erat eget velit. Sed sagittis mauris non nibh dictum vestibulum. Integer volutpat mi quis libero volutpat et laoreet tellus rhoncus. Curabitur gravida urna tortor, in aliquet mauris.</p>

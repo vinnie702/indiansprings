@@ -10,15 +10,63 @@ admin.addmemberIndex = function()
 admin.checkAddMemberForm = function()
 {
 
-    if ($('#firstName').val() == '')
+    if ($('#inputfirstName').val() == '')
     {
         global.renderAlert("Please enter your first name!");
         return false;
     }
 
-    if ($('#lastName').val() == '')
+    if ($('#inputlastName').val() == '')
     {
         global.renderAlert("Please enter your last name!");
+        return false;
+    }
+
+    if ($('#inputEmail').val() == '')
+    {
+        global.renderAlert("Please enter a valid email address! (If no email exists, enter 'x@x.com')");
+        return false;
+    }
+
+    if ($('#inputPassword').val() == '')
+    {
+        global.renderAlert("Please create a password!");
+        return false;
+    }
+
+    if ($('#inputPhone').val() == '')
+    {
+        global.renderAlert("Please enter your phone number!");
+        return false;
+    }
+
+    if ($('#inputAddress1').val() == '')
+    {
+        global.renderAlert("Please enter your address!");
+        return false;
+    }
+
+    if ($('#inputCity').val() == '')
+    {
+        global.renderAlert("Please enter your city!");
+        return false;
+    }
+
+    if ($('#inputZip').val() == '')
+    {
+        global.renderAlert("Please enter your zip code!");
+        return false;
+    }
+
+    if ($('#inputCountry').val() == '')
+    {
+        global.renderAlert("Please enter your country!");
+        return false;
+    }
+
+    if ($('#inputBio').val() == '')
+    {
+        global.renderAlert("Please enter your bio!");
         return false;
     }
 
@@ -29,7 +77,7 @@ admin.checkAddMemberForm = function()
 
 function contactInit()
 {
-	$('#contactinfo').load('contact.html #ldg');
+	$('#contactus well').load('contact.html #ldg');
 	
 	$('#ldgbtn').click(function(){
 	getldg("ldg");
@@ -56,13 +104,9 @@ function contactInit()
 	});
 		
 	$('#trsrbtn').click(function(){
-	getsw("sw");
+	getsw("trsr");
 	});	
 	
-	$('#jwbtn').click(function(){
-	getjw("jw");
-	});
-
 	$('#secbtn').click(function(){
 	getsec("sec");
 	});
@@ -80,70 +124,70 @@ function contactInit()
 
 function getldg(type)
 {
-	$.get("/admin/contact/" + type, function(data){
+	$.get("/welcome/contact/" + type, function(data){
 	$('#contactinfo').html(data);	
 	});
 }
 
 function getwm(type)
 {
-	$.get("/admin/contact/" + type, function(data){
+	$.get("/welcome/contact/" + type, function(data){
 	$('#contactinfo').html(data);	
 	});
 }
 	
 function getsw(type)
 {
-	$.get("/admin/contact/" + type, function(data){
+	$.get("/welcome/contact/" + type, function(data){
 	$('#contactinfo').html(data);	
 	});
 }	
 	
 function getjw(type)
 {
-	$.get("/admin/contact/" + type, function(data){
+	$.get("/welcome/contact/" + type, function(data){
 	$('#contactinfo').html(data);	
 	});
 }	
 
 function getsd(type)
 {
-	$.get("/admin/contact/" + type, function(data){
+	$.get("/welcome/contact/" + type, function(data){
 	$('#contactinfo').html(data);	
 	});
 }
 
 function getjd(type)
 {
-	$.get("/admin/contact/" + type, function(data){
+	$.get("/welcome/contact/" + type, function(data){
 	$('#contactinfo').html(data);	
 	});
 }
 	
 function gettrsr(type)
 {
-	$.get("/admin/contact/" + type, function(data){
+	$.get("/welcome/contact/" + type, function(data){
 	$('#contactinfo').html(data);	
 	});
 }	
 	
 function getsec(type)
 {
-	$.get("/admin/contact/" + type, function(data){
+	$.get("/welcome/contact/" + type, function(data){
 	$('#contactinfo').html(data);	
 	});
 }	
 
 function getchap(type)
 {
-	$.get("admin/contact/" + type, function(data){
+	$.get("welcome/contact/" + type, function(data){
 	$('#contactinfo').html(data);	
 	});
 }	
 	
 function getmar(type)
 {
-	$.get("/admin/contact/" + type, function(data){
+	$.get("/welcome/contact/" + type, function(data){
 	$('#contactinfo').html(data);	
 	});
 }	
